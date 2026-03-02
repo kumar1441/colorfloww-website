@@ -227,7 +227,7 @@ export function Hero() {
               className="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-3"
             >
               <AppleStoreBadge href="https://apps.apple.com" />
-              <GooglePlayBadge href="https://play.google.com/store" />
+              <GooglePlayBadge href="https://play.google.com/store/apps/details?id=com.nailay.colorfloww" />
             </motion.div>
           </div>
 

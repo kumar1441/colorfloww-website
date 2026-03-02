@@ -1,3 +1,4 @@
+import { Routes, Route } from 'react-router';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { StatsBar } from './components/StatsBar';
@@ -8,8 +9,10 @@ import { CommunityFeatures } from './components/CommunityFeatures';
 import { FAQ } from './components/FAQ';
 import { EmailCTA } from './components/EmailCTA';
 import { Footer } from './components/Footer';
+import { Support } from './pages/Support';
+import { Privacy } from './pages/Privacy';
 
-export default function App() {
+function Home() {
   return (
     <div className="min-h-screen">
       <Navbar />
@@ -23,5 +26,15 @@ export default function App() {
       <EmailCTA />
       <Footer />
     </div>
+  );
+}
+
+export default function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/support" element={<Support />} />
+      <Route path="/privacy" element={<Privacy />} />
+    </Routes>
   );
 }

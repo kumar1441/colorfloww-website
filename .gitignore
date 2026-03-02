@@ -15,6 +15,9 @@ dist/
 # Claude Code local session data
 .claude/
 
+# Firebase local cache
+.firebase/
+
 # editor
 .vscode/
 .idea/

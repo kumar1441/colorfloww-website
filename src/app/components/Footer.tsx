@@ -1,7 +1,6 @@
-import { useState } from 'react';
-import { Instagram, Twitter, Linkedin } from 'lucide-react';
-import { PrivacyPolicyModal } from './PrivacyPolicyModal';
+import { Instagram, Twitter } from 'lucide-react';
 import { TermsModal } from './TermsModal';
+import { useState } from 'react';
 
 function TikTokIcon({ className }: { className?: string }) {
   return (
@@ -28,21 +27,18 @@ function PinterestIcon({ className }: { className?: string }) {
 }
 
 const socialLinks = [
-  { label: 'Instagram', Icon: Instagram, href: 'https://instagram.com/colorfloww' },
-  { label: 'TikTok', Icon: TikTokIcon, href: 'https://tiktok.com/@colorfloww' },
-  { label: 'Twitter', Icon: Twitter, href: 'https://twitter.com/colorfloww' },
-  { label: 'LinkedIn', Icon: Linkedin, href: 'https://linkedin.com/company/colorfloww' },
-  { label: 'Reddit', Icon: RedditIcon, href: 'https://reddit.com/r/colorfloww' },
-  { label: 'Pinterest', Icon: PinterestIcon, href: 'https://pinterest.com/colorfloww' },
+  { label: 'Instagram', Icon: Instagram, href: 'https://www.instagram.com/getcolorfloww' },
+  { label: 'TikTok', Icon: TikTokIcon, href: 'https://www.tiktok.com/@trycolorfloww' },
+  { label: 'Twitter', Icon: Twitter, href: 'https://x.com/ravi1doddi' },
+  { label: 'Reddit', Icon: RedditIcon, href: 'https://www.reddit.com/user/SundaeDull9807/' },
+  { label: 'Pinterest', Icon: PinterestIcon, href: 'https://www.pinterest.com/colorfloww' },
 ];
 
 export function Footer() {
-  const [privacyOpen, setPrivacyOpen] = useState(false);
   const [termsOpen, setTermsOpen] = useState(false);
 
   return (
     <>
-      <PrivacyPolicyModal open={privacyOpen} onClose={() => setPrivacyOpen(false)} />
       <TermsModal open={termsOpen} onClose={() => setTermsOpen(false)} />
 
       <footer className="bg-[#111111] text-white py-12 px-4 border-t border-white/5">
@@ -80,18 +76,24 @@ export function Footer() {
                   {label}
                 </button>
               ))}
-              <button
-                onClick={() => setPrivacyOpen(true)}
+              <a
+                href="/privacy"
                 className="text-sm text-gray-500 hover:text-white transition-colors"
               >
                 Privacy Policy
-              </button>
+              </a>
               <button
                 onClick={() => setTermsOpen(true)}
                 className="text-sm text-gray-500 hover:text-white transition-colors"
               >
                 Terms
               </button>
+              <a
+                href="/support"
+                className="text-sm text-gray-500 hover:text-white transition-colors"
+              >
+                Support
+              </a>
             </div>
 
             {/* Social */}
