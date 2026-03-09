@@ -112,7 +112,7 @@ export function Hero() {
         <div className="absolute top-20 right-10 w-72 h-72 rounded-full bg-[#4A7B6E]/8 blur-3xl" />
         <div className="absolute bottom-20 left-10 w-64 h-64 rounded-full bg-[#F0E8DE]/60 blur-3xl" />
         {/* Floating color swatches */}
-        <div className="absolute top-32 right-[10%] hidden lg:block">
+        <div className="absolute top-32 right-[10%] hidden lg:block z-20">
           {['#FF6B9D', '#6B8F71', '#A29BFE', '#FDCB6E', '#4A7B6E', '#E17055', '#74B9FF'].map((c, i) => (
             <motion.div
               key={c}
@@ -226,7 +226,7 @@ export function Hero() {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-3"
             >
-              <AppleStoreBadge href="https://apps.apple.com" />
+              <AppleStoreBadge href="https://apps.apple.com/us/app/colorfloww-nail-color-try-on/id6758867881" />
               <GooglePlayBadge href="https://play.google.com/store/apps/details?id=com.nailay.colorfloww" />
             </motion.div>
           </div>
