@@ -11,6 +11,7 @@ import { EmailCTA } from './components/EmailCTA';
 import { Footer } from './components/Footer';
 import { Support } from './pages/Support';
 import { Privacy } from './pages/Privacy';
+import { Try } from './pages/Try';
 
 function Home() {
   return (
@@ -35,6 +36,7 @@ export default function App() {
       <Route path="/" element={<Home />} />
       <Route path="/support" element={<Support />} />
       <Route path="/privacy" element={<Privacy />} />
+      <Route path="/try/:shareId" element={<Try />} />
     </Routes>
   );
 }
