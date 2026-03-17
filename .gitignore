@@ -26,3 +26,14 @@ dist/
 npm-debug.*
 yarn-debug.*
 yarn-error.*
+*.log
+
+# TypeScript
+*.tsbuildinfo
+
+# Vite
+vite.config.ts.timestamp*
+
+# Secrets
+*.pem
+*.key
