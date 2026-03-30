@@ -37,3 +37,6 @@ vite.config.ts.timestamp*
 # Secrets
 *.pem
 *.key
+
+# Sample screenshots
+sample/
