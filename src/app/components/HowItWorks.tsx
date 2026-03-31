@@ -6,7 +6,6 @@ function PhoneFrame({ src, alt }: { src: string; alt: string }) {
       <div className="relative rounded-[2.4rem] overflow-hidden shadow-xl border-[8px] border-[#1C1C1E]">
         <img src={src} alt={alt} className="w-full block" />
       </div>
-      <div className="absolute top-[2px] left-1/2 -translate-x-1/2 w-16 h-4 bg-[#1C1C1E] rounded-b-xl z-10" />
     </div>
   );
 }
@@ -82,7 +81,7 @@ const steps = [
     number: '01',
     title: 'Browse or Mix Your Shade',
     description: 'Scroll through curated collections — Pastels, Bold, Trending — or open Custom Mix and dial in any exact color with RGB sliders. Over 5 million combinations at your fingertips.',
-    image: '/IMG_2043.PNG',
+    image: '/browse.png',
     imageAlt: 'Colorfloww home screen with color collections',
     placeholder: false,
   },
@@ -90,7 +89,7 @@ const steps = [
     number: '02',
     title: 'See It on Your Actual Nails',
     description: 'Take a photo of your hand. The app instantly overlays any color onto your real nails — on your skin tone, your nail shape, your lighting. No guessing. No surprises.',
-    image: '/step_2.png',
+    image: '/result.png',
     imageAlt: 'Colorfloww try-on — color overlaid on real nails',
     placeholder: false,
   },

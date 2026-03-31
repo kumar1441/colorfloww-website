@@ -78,8 +78,6 @@ function PhoneFrame({ src, alt, className = '' }: { src: string; alt: string; cl
       <div className="relative rounded-[2.8rem] overflow-hidden shadow-2xl border-[10px] border-[#1C1C1E]">
         <img src={src} alt={alt} className="w-full block" />
       </div>
-      {/* Notch */}
-      <div className="absolute top-[2px] left-1/2 -translate-x-1/2 w-20 h-5 bg-[#1C1C1E] rounded-b-2xl z-10" />
     </div>
   );
 }
@@ -245,7 +243,7 @@ export function Hero() {
 
             {/* Front phone */}
             <div className="relative z-10">
-              <PhoneFrame src="/IMG_2043.PNG" alt="Colorfloww home screen" />
+              <PhoneFrame src="/hero.png" alt="Colorfloww home screen" />
 
               {/* Floating badge */}
               <motion.div

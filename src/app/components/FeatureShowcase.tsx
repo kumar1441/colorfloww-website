@@ -7,7 +7,6 @@ function PhoneFrame({ src, alt }: { src: string; alt: string }) {
       <div className="relative rounded-[2.6rem] overflow-hidden shadow-2xl border-[8px] border-[#1C1C1E]">
         <img src={src} alt={alt} className="w-full block" />
       </div>
-      <div className="absolute top-[2px] left-1/2 -translate-x-1/2 w-16 h-4 bg-[#1C1C1E] rounded-b-xl z-10" />
     </div>
   );
 }
@@ -20,7 +19,7 @@ const features = [
     description:
       'A never-ending feed of real nail looks from the community. Swipe right on colors you love. Submit your own look, collect votes, and watch your Karma score climb.',
     callout: { value: '+5 Karma', label: 'per vote you receive' },
-    image: '/spotlight.png',
+    image: '/spotlight-new.png',
     imageAlt: 'Spotlight screen — Tinder-style nail voting',
     bg: '#EEF4F1',
   },
